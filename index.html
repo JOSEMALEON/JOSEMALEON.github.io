@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio profesional de José Manuel León Carmona, Junior Software Developer con foco en Java y Python.">
+  <meta name="theme-color" content="#08111f">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="José Manuel León Carmona | Junior Software Developer">
+  <meta property="og:description" content="Portfolio profesional: Java, Python, Spring Boot, Firebase y proyectos de desarrollo de software.">
+  <meta property="og:image" content="assets/images/jose-manuel-leon.png">
+
+  <title>José Manuel León Carmona | Junior Software Developer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "José Manuel León Carmona",
+    "jobTitle": "Junior Software Developer",
+    "url": "",
+    "sameAs": ["https://www.linkedin.com/in/jmleoncarmona"],
+    "knowsAbout": ["Java", "Python", "Spring Boot", "JPA", "Hibernate", "SQL", "Firebase", "JavaScript", "Docker"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell">
+      <a href="#inicio" class="brand" aria-label="Ir al inicio">
+        <span class="brand-symbol">JM</span>
+        <span class="brand-name">José Manuel León</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#skills" data-i18n="nav.skills">Tecnologías</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#formacion" data-i18n="nav.education">Formación</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="square-button language-button" id="languageButton" type="button" aria-label="Cambiar idioma">
+          <span id="languageLabel">EN</span>
+        </button>
+        <button class="square-button" id="themeButton" type="button" aria-label="Cambiar tema">
+          <svg id="themeIconMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 0 0 9.8 9.8Z"/></svg>
+          <svg id="themeIconSun" class="hidden" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegación móvil">
+      <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      <a href="#skills" data-i18n="nav.skills">Tecnologías</a>
+      <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+      <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="#formacion" data-i18n="nav.education">Formación</a>
+      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero section" id="inicio">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <div class="availability-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.available">Abierto a oportunidades de desarrollo</span>
+          </div>
+
+          <p class="overline" data-i18n="hero.greeting">Hola, soy</p>
+          <h1>José Manuel<br><span>León Carmona</span></h1>
+          <p class="role">Junior Software Developer</p>
+          <p class="hero-text" data-i18n="hero.text">Desarrollador junior con foco en Java y Python. Me gusta aprender de forma autónoma, resolver problemas reales y convertir ideas en aplicaciones funcionales.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos">
+              <span data-i18n="hero.projectCta">Ver proyecto</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="button button-ghost cv-link" href="assets/docs/CV_Jose_Manuel_Leon_ES.pdf" download>
+              <span data-i18n="hero.cvCta">Descargar CV</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+            </a>
+          </div>
+
+          <div class="hero-links">
+            <a href="mailto:josem.leon.99@gmail.com">josem.leon.99@gmail.com</a>
+            <span aria-hidden="true">•</span>
+            <a href="https://www.linkedin.com/in/jmleoncarmona" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-stage">
+            <div class="orbit orbit-outer" aria-hidden="true"></div>
+            <div class="orbit orbit-inner" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <img src="assets/images/jose-manuel-leon.png" alt="José Manuel León Carmona" width="680" height="680">
+            </div>
+
+            <div class="tech-chip chip-java">
+              <span class="chip-icon">J</span>
+              <div><strong>Java</strong><small data-i18n="hero.java">Lenguaje principal</small></div>
+            </div>
+            <div class="tech-chip chip-python">
+              <span class="chip-icon">Py</span>
+              <div><strong>Python</strong><small data-i18n="hero.python">Proyecto personal</small></div>
+            </div>
+            <div class="tech-chip chip-spring">
+              <span class="chip-icon">S</span>
+              <div><strong>Spring Boot</strong><small data-i18n="hero.spring">Backend</small></div>
+            </div>
+          </div>
+
+          <div class="work-mode-card">
+            <span class="card-eyebrow" data-i18n="hero.modeLabel">Disponibilidad</span>
+            <strong data-i18n="hero.mode">Remoto · Híbrido · Presencial</strong>
+            <p data-i18n="hero.modeText">Flexible según la oportunidad.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#sobre-mi" class="scroll-cue" aria-label="Seguir bajando">
+        <span data-i18n="hero.scroll">Explorar portfolio</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="section-index">01</span>
+          <div>
+            <p class="section-kicker" data-i18n="about.kicker">Perfil</p>
+            <h2 data-i18n="about.title">Sobre mí</h2>
+          </div>
+        </header>
+
+        <div class="about-layout">
+          <article class="glass-card about-card reveal">
+            <p class="lead" data-i18n="about.p1">Soy Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y cuento con experiencia práctica en personalización de software empresarial. Trabajo principalmente con Java y Python y me siento cómodo aprendiendo nuevas herramientas por mi cuenta.</p>
+            <p data-i18n="about.p2">Me considero una persona proactiva, adaptable y autodidacta. Busco una oportunidad donde seguir creciendo como desarrollador y aportar desde el primer día con una base técnica sólida y ganas de aprender.</p>
+
+            <div class="about-facts">
+              <div><span class="fact-value">2025</span><span class="fact-label" data-i18n="about.fact1">Fin de DAM</span></div>
+              <div><span class="fact-value">B2</span><span class="fact-label" data-i18n="about.fact2">Inglés</span></div>
+              <div><span class="fact-value">2026</span><span class="fact-label" data-i18n="about.fact3">MagicInventory</span></div>
+            </div>
+          </article>
+
+          <aside class="principles-grid reveal" aria-label="Fortalezas profesionales">
+            <article class="principle-card">
+              <span class="principle-number">01</span>
+              <h3 data-i18n="about.autodidactTitle">Aprendizaje autónomo</h3>
+              <p data-i18n="about.autodidactText">Capacidad para investigar, probar y aprender herramientas nuevas de forma independiente.</p>
+            </article>
+            <article class="principle-card">
+              <span class="principle-number">02</span>
+              <h3 data-i18n="about.adaptTitle">Adaptabilidad</h3>
+              <p data-i18n="about.adaptText">Experiencia en entornos técnicos y operativos distintos, manteniendo enfoque y responsabilidad.</p>
+            </article>
+            <article class="principle-card">
+              <span class="principle-number">03</span>
+              <h3 data-i18n="about.problemTitle">Orientación práctica</h3>
+              <p data-i18n="about.problemText">Preferencia por construir soluciones útiles, iterar y mejorar sobre problemas reales.</p>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="skills">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="section-index">02</span>
+          <div>
+            <p class="section-kicker" data-i18n="skills.kicker">Stack</p>
+            <h2 data-i18n="skills.title">Tecnologías</h2>
+            <p class="section-description" data-i18n="skills.subtitle">Herramientas que he utilizado en formación, prácticas y proyectos personales. Sin barras de nivel artificiales: prefiero mostrar contexto real de uso.</p>
+          </div>
+        </header>
+
+        <div class="skills-grid">
+          <article class="skill-card featured reveal">
+            <div class="skill-card-head"><span class="skill-badge">01</span><h3 data-i18n="skills.languages">Lenguajes</h3></div>
+            <div class="tag-cloud">
+              <span class="tag tag-strong">Java</span><span class="tag tag-strong">Python</span><span class="tag">JavaScript</span><span class="tag">SQL</span><span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-badge">02</span><h3 data-i18n="skills.backend">Backend y datos</h3></div>
+            <div class="tag-cloud">
+              <span class="tag tag-strong">Spring Boot</span><span class="tag">JPA / Hibernate</span><span class="tag tag-strong">Firebase</span><span class="tag">Firestore</span><span class="tag">Firebase Auth</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-badge">03</span><h3 data-i18n="skills.tools">Herramientas</h3></div>
+            <div class="tag-cloud">
+              <span class="tag">Docker Compose</span><span class="tag">Git</span><span class="tag">JUnit</span><span class="tag">IntelliJ IDEA</span><span class="tag">Eclipse</span><span class="tag">VS Code</span>
+            </div>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card-head"><span class="skill-badge">04</span><h3 data-i18n="skills.context">Contexto de uso</h3></div>
+            <ul class="context-list">
+              <li><span>Java / Spring</span><small data-i18n="skills.context1">Prácticas profesionales y formación</small></li>
+              <li><span>Python / Firebase</span><small data-i18n="skills.context2">MagicInventory</small></li>
+              <li><span>Git / Docker / JUnit</span><small data-i18n="skills.context3">Formación y proyectos</small></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contribution-section" id="aportacion">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="section-index">03</span>
+          <div>
+            <p class="section-kicker" data-i18n="contribution.kicker">Valor profesional</p>
+            <h2 data-i18n="contribution.title">Qué puedo aportar</h2>
+          </div>
+        </header>
+
+        <div class="contribution-grid">
+          <article class="contribution-card reveal">
+            <span class="contribution-icon">01</span>
+            <h3 data-i18n="contribution.card1Title">Autonomía para aprender</h3>
+            <p data-i18n="contribution.card1Text">Estoy acostumbrado a investigar, probar y avanzar por mi cuenta cuando aparece una herramienta o problema nuevo.</p>
+          </article>
+
+          <article class="contribution-card reveal">
+            <span class="contribution-icon">02</span>
+            <h3 data-i18n="contribution.card2Title">Adaptación sobre software existente</h3>
+            <p data-i18n="contribution.card2Text">En Tier1 trabajé sobre una plataforma ya construida, realizando ajustes, personalizaciones y correcciones sin partir de cero.</p>
+          </article>
+
+          <article class="contribution-card reveal">
+            <span class="contribution-icon">03</span>
+            <h3 data-i18n="contribution.card3Title">Responsabilidad y adaptación</h3>
+            <p data-i18n="contribution.card3Text">Mi experiencia técnica y operativa me ha acostumbrado a trabajar con objetivos, organizar tareas y responder ante imprevistos.</p>
+          </article>
+        </div>
+
+        <aside class="now-strip reveal" aria-label="Actualmente">
+          <div class="now-heading">
+            <span class="now-pulse" aria-hidden="true"></span>
+            <div>
+              <span class="card-eyebrow" data-i18n="now.kicker">Actualmente</span>
+              <strong data-i18n="now.title">En evolución constante</strong>
+            </div>
+          </div>
+          <div class="now-items">
+            <span data-i18n="now.item1">Desarrollando MagicInventory</span>
+            <span data-i18n="now.item2">Mejorando Java y Spring</span>
+            <span data-i18n="now.item3">Abierto a oportunidades Junior</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="section-index">04</span>
+          <div>
+            <p class="section-kicker" data-i18n="projects.kicker">Proyecto destacado</p>
+            <h2>MagicInventory</h2>
+            <p class="section-description" data-i18n="projects.subtitle">Proyecto personal desarrollado de forma individual y actualmente en evolución.</p>
+          </div>
+        </header>
+
+        <article class="project-showcase reveal">
+          <div class="project-info">
+            <div class="project-meta">
+              <span>2026 — <span data-i18n="projects.present">Actualidad</span></span>
+              <span data-i18n="projects.personal">Proyecto personal</span>
+              <span class="status-live"><i></i><span data-i18n="projects.dev">En desarrollo</span></span>
+            </div>
+
+            <h3 data-i18n="projects.headline">Gestión de colecciones con datos en la nube y seguimiento de precios.</h3>
+            <p data-i18n="projects.description">Aplicación de inventario creada inicialmente para colecciones de cartas Magic: The Gathering, planteada para poder adaptarse a otras temáticas. Centraliza usuarios, stock, categorías, imágenes, precios y exportación de datos.</p>
+
+            <div class="project-stack">
+              <span>Python</span><span>Firebase Auth</span><span>Firestore</span><span>MKM API</span>
+            </div>
+
+            <div class="feature-list">
+              <div><span>01</span><p data-i18n="projects.feature1">Registro e inicio de sesión con Firebase Authentication.</p></div>
+              <div><span>02</span><p data-i18n="projects.feature2">Colección independiente y persistente para cada usuario mediante Firestore.</p></div>
+              <div><span>03</span><p data-i18n="projects.feature3">Control de stock, categorías, imágenes y exportación de datos.</p></div>
+              <div><span>04</span><p data-i18n="projects.feature4">Seguimiento del precio utilizando la API de MKM.</p></div>
+            </div>
+
+            <p class="project-note" data-i18n="projects.note">El repositorio aún no está publicado. Esta sección muestra la arquitectura funcional del proyecto, no una demo pública.</p>
+          </div>
+
+          <div class="project-visual" aria-label="Representación visual de MagicInventory">
+            <div class="app-window">
+              <div class="app-topbar">
+                <div class="traffic"><i></i><i></i><i></i></div>
+                <span>MagicInventory</span>
+                <span class="app-sync"><i></i> Cloud sync</span>
+              </div>
+              <div class="app-body">
+                <aside class="app-sidebar">
+                  <div class="mini-logo">MI</div>
+                  <span class="active"></span><span></span><span></span><span></span>
+                </aside>
+                <div class="dashboard">
+                  <div class="dashboard-head">
+                    <div><small data-i18n="projects.mockCollection">Mi colección</small><strong>Magic Cards</strong></div>
+                    <button type="button" tabindex="-1">+ <span data-i18n="projects.mockAdd">Añadir</span></button>
+                  </div>
+                  <div class="metrics">
+                    <div><small data-i18n="projects.mockCards">Cartas</small><strong>248</strong><em>+12</em></div>
+                    <div><small data-i18n="projects.mockValue">Valor</small><strong>€1.284</strong><em>+4.8%</em></div>
+                    <div><small data-i18n="projects.mockUsers">Perfil</small><strong>Cloud</strong><em>✓</em></div>
+                  </div>
+                  <div class="inventory-panel">
+                    <div class="inventory-head"><span data-i18n="projects.mockInventory">Inventario</span><span data-i18n="projects.mockPrice">Precio MKM</span></div>
+                    <div class="inventory-row"><div class="card-thumb thumb-a"></div><div><strong>Card #042</strong><small>Rare · x2</small></div><b>€18.40</b></div>
+                    <div class="inventory-row"><div class="card-thumb thumb-b"></div><div><strong>Card #128</strong><small>Mythic · x1</small></div><b>€31.90</b></div>
+                    <div class="inventory-row"><div class="card-thumb thumb-c"></div><div><strong>Card #217</strong><small>Uncommon · x4</small></div><b>€6.15</b></div>
+                  </div>
+                  <div class="price-panel">
+                    <div class="price-title"><span data-i18n="projects.mockTrend">Evolución de precio</span><b>7d</b></div>
+                    <svg class="sparkline" viewBox="0 0 360 100" preserveAspectRatio="none" aria-hidden="true">
+                      <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="currentColor" stop-opacity=".28"/><stop offset="100%" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs>
+                      <path class="spark-fill" d="M0 86 C30 75,45 78,70 63 S120 78,145 53 S195 62,220 42 S270 58,295 28 S330 34,360 16 L360 100 L0 100 Z"/>
+                      <path class="spark-line" d="M0 86 C30 75,45 78,70 63 S120 78,145 53 S195 62,220 42 S270 58,295 28 S330 34,360 16"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="architecture reveal">
+          <div class="architecture-title">
+            <span data-i18n="projects.archLabel">Flujo funcional</span>
+            <p data-i18n="projects.archText">Una vista simplificada de cómo se conectan las piezas principales.</p>
+          </div>
+          <div class="architecture-flow">
+            <div class="arch-node"><span>01</span><strong data-i18n="projects.archUser">Usuario</strong><small data-i18n="projects.archUser2">Interfaz gráfica</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>02</span><strong>Firebase Auth</strong><small data-i18n="projects.archAuth">Acceso</small></div>
+            <div class="arch-arrow">→</div>
+            <div class="arch-node"><span>03</span><strong>Firestore</strong><small data-i18n="projects.archDb">Colección en nube</small></div>
+            <div class="arch-arrow">↔</div>
+            <div class="arch-node"><span>04</span><strong>MKM API</strong><small data-i18n="projects.archApi">Precios</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="experiencia">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="section-index">05</span>
+          <div>
+            <p class="section-kicker" data-i18n="experience.kicker">Trayectoria</p>
+            <h2 data-i18n="experience.title">Experiencia</h2>
+          </div>
+        </header>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-date">03/2025 — 06/2025</div>
+            <div class="timeline-card">
+              <div class="timeline-heading">
+                <div><h3>Tier1 Technology S.A.</h3><p class="timeline-role" data-i18n="experience.tierRole">Desarrollador Junior en prácticas</p></div>
+                <div class="timeline-tags"><span>Java</span><span>Spring Boot</span><span>JPA/Hibernate</span><span>JavaScript</span><span>SQL</span></div>
+              </div>
+              <p data-i18n="experience.tierText">Prácticas con un enfoque formativo y autodidacta sobre Comerzzia, el software de Tier1. Trabajé en personalizaciones y ajustes del producto, corrección de errores, cambios en lógica backend, endpoints, bases de datos, interfaz e integraciones.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item secondary reveal">
+            <div class="timeline-marker"><span></span></div>
+            <div class="timeline-date">02/2026 — 09/2026</div>
+            <div class="timeline-card">
+              <div class="timeline-heading"><div><h3>Hermes Delivery</h3><p class="timeline-role" data-i18n="experience.hermesRole">Repartidor · Servicio para Amazon</p></div></div>
+              <p data-i18n="experience.hermesText">Experiencia adicional en un entorno operativo exigente: carga y organización del vehículo, gestión de rutas, uso de aplicación de reparto y resolución de incidencias operativas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacion">
+      <div class="container">
+        <header class="section-heading reveal">
+          <span class="section-index">06</span>
+          <div>
+            <p class="section-kicker" data-i18n="education.kicker">Base técnica</p>
+            <h2 data-i18n="education.title">Formación y certificaciones</h2>
+          </div>
+        </header>
+
+        <div class="education-grid">
+          <article class="education-card main reveal">
+            <span class="education-year">2023 — 2025</span>
+            <h3 data-i18n="education.dam">Técnico Superior en Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p>Davante MEDAC</p>
+            <div class="education-tags"><span>Java</span><span>Python</span><span>SQL</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="education-card reveal"><span class="education-year">AWS</span><h3>AWS Cloud Quest: Cloud Practitioner</h3><p>Amazon Web Services</p></article>
+          <article class="education-card reveal"><span class="education-year">2025</span><h3 data-i18n="education.git">Curso de Git · 7 h</h3><p>OpenWebinars</p></article>
+          <article class="education-card reveal"><span class="education-year">2025</span><h3 data-i18n="education.spring">Introducción a Spring Framework · 2 h</h3><p>OpenWebinars</p></article>
+          <article class="education-card reveal"><span class="education-year">2025</span><h3 data-i18n="education.cyber">Introducción a la Ciberseguridad · 10 h</h3><p>OpenWebinars</p></article>
+          <article class="education-card reveal"><span class="education-year" data-i18n="education.languagesLabel">Idiomas</span><h3 data-i18n="education.english">Inglés · B2</h3><p data-i18n="education.englishText">Nivel acreditado</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container">
+        <article class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="section-kicker" data-i18n="contact.kicker">Contacto</p>
+            <h2 data-i18n="contact.title">¿Hablamos?</h2>
+            <p data-i18n="contact.text">Estoy abierto a oportunidades de desarrollo remotas, híbridas o presenciales. Si mi perfil puede encajar en tu equipo, estaré encantado de conversar.</p>
+          </div>
+
+          <div class="contact-actions">
+            <a class="button button-primary"
+               href="https://mail.google.com/mail/?view=cm&fs=1&to=josem.leon.99@gmail.com&su=Contacto%20desde%20tu%20portfolio"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span data-i18n="contact.email">Enviar email</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg>
+            </a>
+            <button class="button button-ghost" id="copyEmailButton" type="button" data-email="josem.leon.99@gmail.com">
+              <span data-i18n="contact.copy">Copiar email</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="10" height="11" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h2"/></svg>
+            </button>
+            <a class="button button-ghost" href="https://www.linkedin.com/in/jmleoncarmona" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </div>
+
+          <div class="contact-details">
+            <span>josem.leon.99@gmail.com</span>
+            <span data-i18n="contact.mode">Remoto · Híbrido · Presencial</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> José Manuel León Carmona</p>
+      <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+
+  <button class="back-to-top" id="backToTopButton" type="button" aria-label="Volver arriba" title="Volver arriba">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 19V5M6 11l6-6 6 6"/>
+    </svg>
+  </button>
+
+  <div class="scroll-progress" aria-hidden="true">
+    <span id="scrollProgressBar"></span>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
