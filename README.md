@@ -13,8 +13,8 @@ Portfolio profesional estático, bilingüe y responsive orientado a candidaturas
 - Proyecto destacado **MagicInventory** con mockup y arquitectura funcional.
 - Experiencia en Tier1 Technology y Hermes Delivery.
 - Formación y certificaciones.
-- Descarga automática del CV en español o inglés según el idioma seleccionado.
-- Contacto por email y LinkedIn.
+- Botón de WhatsApp que abre una conversación directa con un mensaje ya escrito en el idioma seleccionado.
+- Contacto por email, WhatsApp y LinkedIn.
 - Botón para copiar el email.
 - Animaciones respetando `prefers-reduced-motion`.
 - SEO básico, Open Graph, JSON-LD y página 404.
@@ -33,11 +33,8 @@ Portfolio_Jose_Manuel_Leon_Base/
 ├── 404.html
 ├── README.md
 └── assets/
-    ├── images/
-    │   └── jose-manuel-leon.png
-    └── docs/
-        ├── CV_Jose_Manuel_Leon_ES.pdf
-        └── CV_Jose_Manuel_Leon_EN.pdf
+    └── images/
+        └── jose-manuel-leon.jpg
 ```
 
 ## Abrirlo en local
@@ -84,7 +81,7 @@ Revisa:
 
 - que la foto sea la que quieres mostrar;
 - que LinkedIn y el email sean correctos;
-- que los CV de `assets/docs` sean las versiones definitivas;
+- que el número de WhatsApp (`whatsappNumber` en `script.js` y los enlaces `wa.me` en `index.html`) sea correcto;
 - que estés de acuerdo con el contenido de MagicInventory;
 - que no quieras añadir o quitar Hermes Delivery del portfolio tecnológico.
 
