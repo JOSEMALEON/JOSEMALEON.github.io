@@ -1,123 +1,60 @@
-# Portfolio de José Manuel León Carmona
+# José Manuel León Carmona · Junior Software Developer
 
-Portfolio profesional estático, bilingüe y responsive orientado a candidaturas de **Junior Software Developer**.
+Portfolio personal, bilingüe (español / inglés), publicado con GitHub Pages.
 
-## Qué incluye
+**🌐 [josemaleon.github.io](https://josemaleon.github.io/)**
 
-- Presentación profesional con foto.
-- Selector español / inglés.
-- Tema oscuro / claro con persistencia local.
-- Diseño responsive para móvil, tablet y escritorio.
-- Sección de perfil y fortalezas.
-- Stack técnico sin barras de nivel artificiales.
-- Proyecto destacado **MagicInventory** con mockup y arquitectura funcional.
-- Experiencia en Tier1 Technology y Hermes Delivery.
-- Formación y certificaciones.
-- Botón de WhatsApp que abre una conversación directa con un mensaje ya escrito en el idioma seleccionado.
-- Contacto por email, WhatsApp y LinkedIn.
-- Botón para copiar el email.
-- Animaciones respetando `prefers-reduced-motion`.
-- SEO básico, Open Graph, JSON-LD y página 404.
-- Sin dependencias externas ni frameworks: HTML + CSS + JavaScript.
+[![Vista previa del portfolio](assets/images/preview.jpg)](https://josemaleon.github.io/)
 
-## Estructura
+## Sobre mí
+
+Desarrollador junior con el título de **Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)** y experiencia práctica en personalización de software empresarial. Trabajo principalmente con **Java** y **Python**.
+
+- 💼 **Tier1 Technology:** prácticas como desarrollador junior sobre la plataforma Comerzzia (Java, Spring Boot, JPA/Hibernate, JavaScript, SQL).
+- 🃏 **MagicInventory:** proyecto personal en desarrollo. Gestión de colecciones con Python, Firebase Authentication, Firestore e integración con la API de MKM para los precios.
+- 🎓 DAM en Davante MEDAC (2023–2025) · AWS Cloud Quest: Cloud Practitioner · Inglés B2.
+
+Abierto a oportunidades de desarrollo en remoto, híbrido o presencial.
+
+## Contacto
+
+- 📧 [josem.leon.99@gmail.com](mailto:josem.leon.99@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/jmleoncarmona)
+- 💬 WhatsApp: desde la sección de contacto del [portfolio](https://josemaleon.github.io/#contacto)
+
+## Sobre esta web
+
+Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks ni dependencias.
+
+- Español / inglés, con el idioma elegido guardado en el navegador.
+- Tema oscuro / claro según la preferencia del sistema.
+- Diseño adaptado a móvil, tablet y escritorio.
+- Accesibilidad: enlace para saltar al contenido, navegación con teclado y animaciones reducidas si el sistema lo pide (`prefers-reduced-motion`).
+- SEO básico: metadatos Open Graph, datos estructurados JSON-LD y página 404.
+
+### Estructura
 
 ```text
-Portfolio_Jose_Manuel_Leon_Base/
-├── index.html
-├── styles.css
-├── script.js
+├── index.html          # Contenido de la página
+├── styles.css          # Estilos, temas y diseño adaptable
+├── script.js           # Traducciones, tema, menú y animaciones
+├── 404.html
 ├── favicon.svg
 ├── site.webmanifest
 ├── robots.txt
-├── 404.html
-├── README.md
-└── assets/
-    └── images/
-        └── jose-manuel-leon.jpg
+└── assets/images/      # Foto de perfil y captura de vista previa
 ```
 
-## Abrirlo en local
-
-La forma más sencilla es abrir `index.html` en Chrome o Edge. Para evitar limitaciones del navegador al probar algunas funciones, es mejor servir la carpeta con un servidor local.
-
-### Con Python
-
-Desde la carpeta del proyecto:
+### Ejecutarla en local
 
 ```bash
 python -m http.server 8000
 ```
 
-Después abre:
+Después abre `http://localhost:8000`.
 
-```text
-http://localhost:8000
-```
+### Notas de mantenimiento
 
-### Con VS Code
-
-Puedes usar la extensión **Live Server** y abrir `index.html` con ella.
-
-## Publicarlo en GitHub Pages
-
-1. Crea un repositorio público llamado, por ejemplo, `portfolio`.
-2. Sube **el contenido** de esta carpeta a la raíz del repositorio.
-3. Abre `Settings` → `Pages`.
-4. En `Build and deployment`, selecciona `Deploy from a branch`.
-5. Selecciona la rama `main` y `/ (root)`.
-6. Guarda y espera a que GitHub muestre la URL pública.
-
-## Publicarlo en Vercel
-
-1. Sube el proyecto a GitHub.
-2. En Vercel, importa el repositorio.
-3. No hace falta configurar framework ni comando de build.
-4. Publica el proyecto.
-
-## Antes de hacerlo público
-
-Revisa:
-
-- que la foto sea la que quieres mostrar;
-- que LinkedIn y el email sean correctos;
-- que el número de WhatsApp (`whatsappNumber` en `script.js` y los enlaces `wa.me` en `index.html`) sea correcto;
-- que estés de acuerdo con el contenido de MagicInventory;
-- que no quieras añadir o quitar Hermes Delivery del portfolio tecnológico.
-
-## Próximas mejoras recomendadas
-
-Cuando MagicInventory esté más avanzado:
-
-- sustituir el mockup por capturas reales;
-- publicar un repositorio limpio en GitHub;
-- añadir botones `Ver código` y/o `Demo`;
-- crear una segunda tarjeta de proyecto;
-- conectar un dominio propio;
-- añadir analítica solo si realmente la necesitas.
-
-
-## Mejoras incluidas en esta versión
-
-- Sección **Qué puedo aportar** con fortalezas vinculadas a experiencia real.
-- Bloque **Actualmente** con el estado profesional y del proyecto.
-- Barra de progreso de lectura fija y muy fina en el borde inferior de la ventana.
-- Se mantiene la corrección responsive de la línea temporal de experiencia.
-
-## Responsive / móvil (v3)
-
-Esta versión incluye ajustes específicos para pantallas pequeñas: navegación desplegable flotante, botones táctiles, portada reescalada, tarjetas compactas, mockup de MagicInventory simplificado, timeline adaptada, contacto apilable y prevención de desbordamientos de texto. También sincroniza el color de la barra del navegador con el tema oscuro/claro cuando el navegador lo permite.
-
-
-## v4 — Corrección móvil de experiencia
-
-La línea temporal móvil separa fecha y contenido en filas distintas para evitar solapamientos.
-
-
-## Cambios de la versión v6
-
-- Indicador de sección activa en navegación de escritorio y móvil.
-- Microinteracciones sutiles en tarjetas, etiquetas y botones.
-- Entrada escalonada de tarjetas al hacer scroll.
-- Botón flotante «volver arriba» que aparece tras avanzar por la página.
-- Respeta `prefers-reduced-motion` para accesibilidad.
+- Los textos están en `index.html` (español) y en el objeto `translations` de `script.js` (español e inglés). Al cambiar un texto hay que actualizar ambos.
+- El número de WhatsApp está en `whatsappNumber` (`script.js`) y en los enlaces `wa.me` de `index.html`.
+- Al cambiar `styles.css` o `script.js`, sube el parámetro de versión (`?v=...`) en `index.html` para que los navegadores no usen la versión guardada en caché.

@@ -268,6 +268,9 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .timeline-heading h3 { margin: 0; font-size: 1.18rem; }
 .timeline-role { margin: 3px 0 0; color: var(--accent); font-size: .8rem; font-weight: 780; }
 .timeline-card > p { max-width: 870px; margin: 16px 0 0; color: var(--muted); }
+.timeline-points { max-width: 870px; margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 9px; color: var(--muted); }
+.timeline-points li { position: relative; padding-left: 20px; }
+.timeline-points li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 7px; height: 7px; border-radius: 2px; background: var(--accent); transform: rotate(45deg); }
 .timeline-tags { max-width: 460px; display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 6px; }
 .timeline-item.secondary { opacity: .84; }
 
@@ -650,6 +653,7 @@ body {
   .timeline-card { padding-bottom: 27px; }
   .timeline-heading h3 { font-size: 1.08rem; }
   .timeline-card > p { margin-top: 12px; font-size: .88rem; }
+  .timeline-points { margin-top: 10px; gap: 7px; font-size: .88rem; }
   .timeline-tags { margin-top: 10px; }
 
   .education-grid { gap: 10px; }
