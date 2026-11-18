@@ -24,11 +24,13 @@ Abierto a oportunidades de desarrollo en remoto, híbrido o presencial.
 
 ## Sobre esta web
 
-Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schibsted Grotesk y Newsreader (Google Fonts).
+Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schibsted Grotesk y JetBrains Mono (Google Fonts). Iconos de tecnologías: [Devicon](https://devicon.dev/) (MIT), guardados en `assets/icons`.
 
 - Español / inglés, con el idioma elegido guardado en el navegador.
-- Tema oscuro / claro según la preferencia del sistema.
-- Diseño tipo CV editorial, adaptado a móvil, tablet y escritorio.
+- Tema oscuro (por defecto) y claro.
+- Portada con fondo animado (red de nodos que reacciona al ratón) y texto que se escribe solo.
+- Experiencia en pestañas, proyecto destacado con esquema animado y tecnologías con sus logos.
+- Adaptada a móvil, tablet y escritorio.
 - Accesibilidad: enlace para saltar al contenido, navegación con teclado y animaciones reducidas si el sistema lo pide (`prefers-reduced-motion`).
 - SEO básico: metadatos Open Graph, datos estructurados JSON-LD y página 404.
 
@@ -37,12 +39,14 @@ Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schib
 ```text
 ├── index.html          # Contenido de la página
 ├── styles.css          # Estilos, temas claro/oscuro y diseño adaptable
-├── script.js           # Traducciones, tema, menú y botones de contacto
+├── script.js           # Traducciones, tema, menú, pestañas y animaciones
 ├── 404.html
 ├── favicon.svg
 ├── site.webmanifest
 ├── robots.txt
-└── assets/images/      # Foto de perfil y captura de vista previa
+└── assets/
+    ├── images/         # Foto de perfil y captura de vista previa
+    └── icons/          # Logos de tecnologías (Devicon, MIT)
 ```
 
 ### Ejecutarla en local
