@@ -285,7 +285,8 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
 .contact-copy, .contact-actions, .contact-details { position: relative; z-index: 2; }
 .contact-card h2 { font-size: clamp(2.4rem, 5vw, 4.7rem); }
 .contact-copy > p:last-child { max-width: 690px; margin: 15px 0 0; color: var(--muted); }
-.contact-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+.contact-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 460px; justify-self: end; }
+.contact-actions .button { width: 100%; }
 .contact-details { grid-column: 1 / -1; padding-top: 24px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: .75rem; }
 
 .site-footer { border-top: 1px solid var(--line); }
@@ -313,7 +314,7 @@ svg { fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: 
   .project-showcase { gap: 28px; }
   .project-visual { min-height: 500px; }
   .architecture { grid-template-columns: 1fr; }
-  .contact-actions { justify-content: flex-start; }
+  .contact-actions { justify-self: start; max-width: none; }
   .education-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .education-card.main { grid-column: span 2; }
 }
