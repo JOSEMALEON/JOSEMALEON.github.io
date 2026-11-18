@@ -24,11 +24,11 @@ Abierto a oportunidades de desarrollo en remoto, híbrido o presencial.
 
 ## Sobre esta web
 
-Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks ni dependencias.
+Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schibsted Grotesk y Newsreader (Google Fonts).
 
 - Español / inglés, con el idioma elegido guardado en el navegador.
 - Tema oscuro / claro según la preferencia del sistema.
-- Diseño adaptado a móvil, tablet y escritorio.
+- Diseño tipo CV editorial, adaptado a móvil, tablet y escritorio.
 - Accesibilidad: enlace para saltar al contenido, navegación con teclado y animaciones reducidas si el sistema lo pide (`prefers-reduced-motion`).
 - SEO básico: metadatos Open Graph, datos estructurados JSON-LD y página 404.
 
@@ -36,8 +36,8 @@ Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks ni dependencias.
 
 ```text
 ├── index.html          # Contenido de la página
-├── styles.css          # Estilos, temas y diseño adaptable
-├── script.js           # Traducciones, tema, menú y animaciones
+├── styles.css          # Estilos, temas claro/oscuro y diseño adaptable
+├── script.js           # Traducciones, tema, menú y botones de contacto
 ├── 404.html
 ├── favicon.svg
 ├── site.webmanifest

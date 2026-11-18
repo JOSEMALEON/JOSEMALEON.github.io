@@ -3,7 +3,7 @@
   "short_name": "JM Portfolio",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#07101d",
-  "theme_color": "#07101d",
+  "background_color": "#f6f7f9",
+  "theme_color": "#f6f7f9",
   "icons": []
 }
