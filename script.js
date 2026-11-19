@@ -6,6 +6,10 @@
 
       "hero.hello": "Junior Software Developer · Java y Python",
       "hero.ctaCv": "Descargar CV",
+      "project.shotPending": "Captura pendiente",
+      "project.shot1": "Inicio de sesión con Firebase Auth",
+      "project.shot2": "Colección con stock, categorías e imágenes",
+      "project.shot3": "Precios de mercado desde la API de MKM",
       "hero.taglinePrefix": "Desarrollo",
       "hero.taglineFull": "Desarrollo backend con Java y Spring, aplicaciones con Python y soluciones en la nube con Firebase.",
       "hero.text": "Soy desarrollador junior. Hice mis prácticas personalizando un software empresarial real en Tier1 Technology y ahora construyo MagicInventory, mi propia aplicación de inventario en la nube.",
@@ -92,6 +96,10 @@
 
       "hero.hello": "Junior Software Developer · Java & Python",
       "hero.ctaCv": "Download CV",
+      "project.shotPending": "Screenshot pending",
+      "project.shot1": "Sign-in with Firebase Auth",
+      "project.shot2": "Collection with stock, categories and images",
+      "project.shot3": "Market prices from the MKM API",
       "hero.taglinePrefix": "I build",
       "hero.taglineFull": "I build backends with Java and Spring, apps with Python and cloud solutions with Firebase.",
       "hero.text": "I'm a junior developer. I did my internship customising real enterprise software at Tier1 Technology, and I'm now building MagicInventory, my own cloud inventory app.",
@@ -228,6 +236,9 @@
     languageButton.setAttribute("aria-label", t("ui.langSwitch"));
     whatsappLinks.forEach((link) => {
       link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t("contact.whatsappText"))}`;
+    });
+    document.querySelectorAll("[data-cv]").forEach((link) => {
+      link.href = `assets/cv/CV-Jose-Manuel-Leon-${language === "es" ? "ES" : "EN"}.pdf`;
     });
     updateThemeLabel();
     updateMenuLabel();

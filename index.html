@@ -41,7 +41,7 @@
 
   <link rel="preload" href="assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20261119c">
+  <link rel="stylesheet" href="styles.css?v=20261119d">
 
   <script type="application/ld+json">
   {
@@ -134,7 +134,7 @@
           <a class="button button-primary" href="#contacto">
             <span data-i18n="hero.ctaContact">Hablemos</span>
           </a>
-          <a class="button button-outline" href="assets/cv/CV-Jose-Manuel-Leon.pdf" download>
+          <a class="button button-outline" href="assets/cv/CV-Jose-Manuel-Leon-ES.pdf" download="CV-Jose-Manuel-Leon.pdf" data-cv>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
             <span data-i18n="hero.ctaCv">Descargar CV</span>
           </a>
@@ -163,7 +163,7 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
 
     <!-- ===================== 01. Sobre mí ===================== -->
     <section class="section wrap" id="sobre-mi" aria-labelledby="about-title">
-      <h2 class="section-title reveal" id="about-title"><span class="mono">01.</span> <span data-i18n="nav.about">Sobre mí</span></h2>
+      <h2 class="section-title reveal" id="about-title"><span class="mono">//</span> <span data-i18n="nav.about">Sobre mí</span></h2>
 
       <div class="about-grid">
         <div class="about-text reveal">
@@ -214,7 +214,7 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
 
     <!-- ===================== 02. Experiencia ===================== -->
     <section class="section wrap" id="experiencia" aria-labelledby="experience-title">
-      <h2 class="section-title reveal" id="experience-title"><span class="mono">02.</span> <span data-i18n="nav.experience">Experiencia</span></h2>
+      <h2 class="section-title reveal" id="experience-title"><span class="mono">//</span> <span data-i18n="nav.experience">Experiencia</span></h2>
 
       <div class="jobs reveal">
         <div class="job-tabs" role="tablist" aria-label="Empresas" data-i18n-label="experience.tabsLabel">
@@ -254,7 +254,7 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
 
     <!-- ===================== 03. Proyecto ===================== -->
     <section class="section wrap" id="proyecto" aria-labelledby="project-title">
-      <h2 class="section-title reveal" id="project-title"><span class="mono">03.</span> <span data-i18n="nav.project">Proyecto</span></h2>
+      <h2 class="section-title reveal" id="project-title"><span class="mono">//</span> <span data-i18n="nav.project">Proyecto</span></h2>
 
       <article class="featured reveal">
         <div class="featured-visual" aria-hidden="true">
@@ -310,12 +310,27 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
           <p data-i18n="project.feature4">Seguimiento de precios de mercado con la API de MKM.</p>
         </li>
       </ul>
+      <div class="shots" id="projectShots">
+        <figure class="shot reveal">
+          <div class="shot-frame shot-pending"><span class="mono" data-i18n="project.shotPending">Captura pendiente</span></div>
+          <figcaption data-i18n="project.shot1">Inicio de sesión con Firebase Auth</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <div class="shot-frame shot-pending"><span class="mono" data-i18n="project.shotPending">Captura pendiente</span></div>
+          <figcaption data-i18n="project.shot2">Colección con stock, categorías e imágenes</figcaption>
+        </figure>
+        <figure class="shot reveal">
+          <div class="shot-frame shot-pending"><span class="mono" data-i18n="project.shotPending">Captura pendiente</span></div>
+          <figcaption data-i18n="project.shot3">Precios de mercado desde la API de MKM</figcaption>
+        </figure>
+      </div>
+
       <p class="note reveal" data-i18n="project.note">El código todavía no es público. Pronto añadiré capturas y el enlace al repositorio.</p>
     </section>
 
     <!-- ===================== 04. Tecnologías ===================== -->
     <section class="section wrap" id="tecnologias" aria-labelledby="skills-title">
-      <h2 class="section-title reveal" id="skills-title"><span class="mono">04.</span> <span data-i18n="nav.skills">Tecnologías</span></h2>
+      <h2 class="section-title reveal" id="skills-title"><span class="mono">//</span> <span data-i18n="nav.skills">Tecnologías</span></h2>
       <p class="section-intro reveal" data-i18n="skills.intro">Java y Spring los he usado en las prácticas y en la formación; Python y Firebase, en MagicInventory.</p>
 
       <div class="skill-groups">
@@ -354,7 +369,7 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
 
     <!-- ===================== 05. Formación ===================== -->
     <section class="section wrap" id="formacion" aria-labelledby="education-title">
-      <h2 class="section-title reveal" id="education-title"><span class="mono">05.</span> <span data-i18n="nav.education">Formación</span></h2>
+      <h2 class="section-title reveal" id="education-title"><span class="mono">//</span> <span data-i18n="nav.education">Formación</span></h2>
 
       <div class="edu-grid">
         <article class="edu-main reveal">
@@ -380,7 +395,7 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
 
     <!-- ===================== 06. Contacto ===================== -->
     <section class="section wrap contact" id="contacto" aria-labelledby="contact-title">
-      <p class="mono contact-overline reveal"><span>06.</span> <span data-i18n="contact.overline">¿Y ahora qué?</span></p>
+      <p class="mono contact-overline reveal"><span>//</span> <span data-i18n="contact.overline">¿Y ahora qué?</span></p>
       <h2 class="contact-title reveal" id="contact-title" data-i18n="contact.title">¿Hablamos?</h2>
       <p class="contact-text reveal" data-i18n="contact.text">Si mi perfil encaja en tu equipo, escríbeme. Respondo rápido por email o WhatsApp y estoy abierto a puestos en remoto, híbridos o presenciales.</p>
 
@@ -397,6 +412,10 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg>
           <span data-i18n="contact.copy">Copiar email</span>
         </button>
+        <a class="button button-outline" href="assets/cv/CV-Jose-Manuel-Leon-ES.pdf" download="CV-Jose-Manuel-Leon.pdf" data-cv>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          <span data-i18n="hero.ctaCv">Descargar CV</span>
+        </a>
         <a class="button button-outline" href="https://www.linkedin.com/in/jmleoncarmona" target="_blank" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
           <span>LinkedIn</span>
@@ -414,6 +433,6 @@ jose.joinTeam(yourTeam); <span class="cm">// ✓ BUILD SUCCESSFUL</span></code><
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="script.js?v=20261119c" defer></script>
+  <script src="script.js?v=20261119d" defer></script>
 </body>
 </html>
