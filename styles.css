@@ -3,6 +3,22 @@
    Oscuro por defecto (azul tinta + cobalto + ocre), con tema claro.
    ========================================================================== */
 
+/* Tipografías servidas desde la propia web (licencia SIL OFL, ver assets/fonts) */
+@font-face {
+  font-family: "Schibsted Grotesk";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("assets/fonts/schibsted-grotesk.woff2") format("woff2-variations"), url("assets/fonts/schibsted-grotesk.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 100 800;
+  font-display: swap;
+  src: url("assets/fonts/jetbrains-mono.woff2") format("woff2-variations"), url("assets/fonts/jetbrains-mono.woff2") format("woff2");
+}
+
 :root,
 :root[data-theme="dark"] {
   --bg: #0b1222;
@@ -404,7 +420,7 @@ svg {
 .hero-inner > :nth-child(4) { animation-delay: .3s; }
 .hero-inner > :nth-child(5) { animation-delay: .4s; }
 .hero-inner > :nth-child(6) { animation-delay: .5s; }
-@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes rise { from { opacity: .01; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
 /* ---------- Sections ---------- */
 

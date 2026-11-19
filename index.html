@@ -11,10 +11,23 @@
   <meta property="og:title" content="José Manuel León Carmona | Junior Software Developer">
   <meta property="og:description" content="Desarrollador junior de Java y Python. Prácticas en Tier1 Technology y proyecto propio MagicInventory.">
   <meta property="og:url" content="https://josemaleon.github.io/">
-  <meta property="og:image" content="https://josemaleon.github.io/assets/images/jose-manuel-leon.jpg">
+  <meta property="og:site_name" content="José Manuel León · Portfolio">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta property="og:image" content="https://josemaleon.github.io/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="José Manuel León Carmona, Junior Software Developer: Java, Spring Boot, Python y Firebase.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="José Manuel León Carmona | Junior Software Developer">
+  <meta name="twitter:description" content="Desarrollador junior de Java y Python. Prácticas en Tier1 Technology y proyecto propio MagicInventory.">
+  <meta name="twitter:image" content="https://josemaleon.github.io/assets/images/og-image.jpg">
+  <link rel="canonical" href="https://josemaleon.github.io/">
 
   <title>José Manuel León Carmona | Junior Software Developer</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/icons/app/icon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/icons/app/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
 
   <script>
@@ -26,10 +39,9 @@
     })();
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20261119a">
+  <link rel="preload" href="assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261119b">
 
   <script type="application/ld+json">
   {
@@ -49,7 +61,7 @@
 
   <header class="site-header" id="siteHeader">
     <div class="wrap header-inner">
-      <a href="#inicio" class="logo" aria-label="José Manuel León, inicio">
+      <a href="#inicio" class="logo" aria-label="JM, José Manuel León: inicio">
         <span class="logo-mark" aria-hidden="true">JM</span>
       </a>
 
@@ -63,7 +75,7 @@
       </nav>
 
       <div class="header-actions">
-        <button class="icon-button" id="languageButton" type="button" aria-label="Switch to English">
+        <button class="icon-button" id="languageButton" type="button" aria-label="EN, switch to English">
           <span id="languageLabel">EN</span>
         </button>
         <button class="icon-button" id="themeButton" type="button" aria-label="Activar tema claro">
@@ -147,7 +159,10 @@
 
         <figure class="portrait reveal">
           <div class="portrait-frame">
-            <img src="assets/images/jose-manuel-leon.jpg" alt="José Manuel León Carmona" width="440" height="440" loading="lazy">
+            <picture>
+              <source srcset="assets/images/jose-manuel-leon.webp" type="image/webp">
+              <img src="assets/images/jose-manuel-leon.jpg" alt="José Manuel León Carmona" width="440" height="440" loading="lazy" decoding="async">
+            </picture>
           </div>
         </figure>
       </div>
@@ -191,7 +206,7 @@
         </div>
 
         <div class="job-panels">
-          <article class="job-panel" role="tabpanel" id="panel-tier1" aria-labelledby="tab-tier1" tabindex="0">
+          <div class="job-panel" role="tabpanel" id="panel-tier1" aria-labelledby="tab-tier1" tabindex="0">
             <h3><span data-i18n="experience.tierRole">Desarrollador junior en prácticas</span> <span class="at">@ Tier1 Technology</span></h3>
             <p class="job-date mono"><span data-i18n="experience.tierDate">Marzo – junio 2025</span></p>
             <p data-i18n="experience.tierText">Personalización y adaptación de Comerzzia, la plataforma de software de Tier1, en un entorno formativo y autodidacta.</p>
@@ -203,9 +218,9 @@
             <ul class="tags mono">
               <li>Java</li><li>Spring Boot</li><li>JPA/Hibernate</li><li>JavaScript</li><li>SQL</li>
             </ul>
-          </article>
+          </div>
 
-          <article class="job-panel" role="tabpanel" id="panel-hermes" aria-labelledby="tab-hermes" tabindex="0" hidden>
+          <div class="job-panel" role="tabpanel" id="panel-hermes" aria-labelledby="tab-hermes" tabindex="0" hidden>
             <h3><span data-i18n="experience.hermesRole">Repartidor, servicio para Amazon</span> <span class="at">@ Hermes Delivery</span></h3>
             <p class="job-date mono"><span data-i18n="experience.hermesDate">Febrero – septiembre 2026</span></p>
             <p data-i18n="experience.hermesText">Trabajo operativo con ritmo y objetivos diarios, donde la organización y la autonomía marcan la diferencia.</p>
@@ -214,7 +229,7 @@
               <li data-i18n="experience.hermesPoint2">Uso diario de la aplicación de reparto para gestionar entregas.</li>
               <li data-i18n="experience.hermesPoint3">Resolución de incidencias sobre la marcha, con autonomía.</li>
             </ul>
-          </article>
+          </div>
         </div>
       </div>
     </section>
@@ -381,6 +396,6 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <script src="script.js?v=20261119a"></script>
+  <script src="script.js?v=20261119b" defer></script>
 </body>
 </html>

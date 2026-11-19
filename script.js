@@ -79,7 +79,7 @@
 
       "footer.made": "Hecho a mano con HTML, CSS y JavaScript",
 
-      "ui.langSwitch": "Switch to English",
+      "ui.langSwitch": "EN, switch to English",
       "ui.themeDark": "Activar tema oscuro",
       "ui.themeLight": "Activar tema claro",
       "ui.menuOpen": "Abrir menú",
@@ -164,7 +164,7 @@
 
       "footer.made": "Handcrafted with HTML, CSS and JavaScript",
 
-      "ui.langSwitch": "Cambiar a español",
+      "ui.langSwitch": "ES, cambiar a español",
       "ui.themeDark": "Switch to dark theme",
       "ui.themeLight": "Switch to light theme",
       "ui.menuOpen": "Open menu",
@@ -241,6 +241,7 @@
 
   function applyTheme() {
     root.dataset.theme = theme;
+    accentRgb = null; // se vuelve a leer el color del tema en el siguiente fotograma
     if (themeColorMeta) themeColorMeta.setAttribute("content", THEME_COLORS[theme]);
     updateThemeLabel();
     storage.set("portfolio-theme", theme);
@@ -428,9 +429,12 @@
   let rafId = null;
   let heroVisible = true;
   const pointer = { x: -9999, y: -9999 };
+  let accentRgb = null;
 
-  function readColor(name) {
-    return getComputedStyle(root).getPropertyValue(name).trim();
+  // Lee el color de acento una sola vez por tema (leerlo en cada fotograma fuerza recálculos de estilo).
+  function getAccentRgb() {
+    if (!accentRgb) accentRgb = hexToRgb(getComputedStyle(root).getPropertyValue("--accent").trim() || "#7c9cff");
+    return accentRgb;
   }
 
   function resizeCanvas() {
@@ -441,7 +445,10 @@
     canvas.width = Math.round(width * dpr);
     canvas.height = Math.round(height * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    const count = Math.round(Math.min(90, Math.max(28, (width * height) / 16000)));
+    const area = width * height;
+    const count = width < 640
+      ? Math.round(Math.min(26, Math.max(16, area / 22000)))
+      : Math.round(Math.min(90, Math.max(28, area / 16000)));
     nodes = Array.from({ length: count }, () => ({
       x: Math.random() * width,
       y: Math.random() * height,
@@ -458,7 +465,7 @@
   }
 
   function draw() {
-    const [r, g, b] = hexToRgb(readColor("--accent") || "#7c9cff");
+    const [r, g, b] = getAccentRgb();
     const maxDist = 140;
     ctx.clearRect(0, 0, width, height);
 

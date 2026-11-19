@@ -2,25 +2,71 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0b1222">
   <title>Página no encontrada | José Manuel León</title>
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/app/apple-touch-icon.png">
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem("portfolio-theme"); } catch (e) {}
+      document.documentElement.dataset.theme = theme === "light" ? "light" : "dark";
+    })();
+  </script>
   <style>
-    :root { --bg: #f6f7f9; --text: #131a2a; --muted: #566074; --accent: #2546c4; --on-accent: #fff; }
-    @media (prefers-color-scheme: dark) { :root { --bg: #0e1420; --text: #e9edf4; --muted: #a1abbd; --accent: #8fa8ff; --on-accent: #0e1420; } }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--text); font-family: "Schibsted Grotesk", system-ui, sans-serif; }
-    main { max-width: 32rem; padding: 32px 16px; }
-    h1 { margin: 0; font-family: Georgia, serif; font-weight: 400; font-size: 2.4rem; line-height: 1.15; }
-    p { margin: 12px 0 0; color: var(--muted); }
-    a { display: inline-block; margin-top: 24px; padding: 12px 18px; border-radius: 10px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+    @font-face { font-family: "Schibsted Grotesk"; font-weight: 400 900; font-display: swap; src: url("/assets/fonts/schibsted-grotesk.woff2") format("woff2"); }
+    @font-face { font-family: "JetBrains Mono"; font-weight: 100 800; font-display: swap; src: url("/assets/fonts/jetbrains-mono.woff2") format("woff2"); }
+
+    :root, :root[data-theme="dark"] { --bg: #0b1222; --surface: #121c33; --text: #c9d3e6; --heading: #eef2fa; --muted: #8e9bb6; --line: #22304d; --accent: #7c9cff; --accent-tint: rgba(124,156,255,.12); --on-accent: #0b1222; --ochre: #e0b25a; color-scheme: dark; }
+    :root[data-theme="light"] { --bg: #f5f7fb; --surface: #fff; --text: #2a3448; --heading: #0f1626; --muted: #5a6680; --line: #dce2ed; --accent: #2546c4; --accent-tint: rgba(37,70,196,.08); --on-accent: #fff; --ochre: #b7832a; color-scheme: light; }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; min-height: 100svh;
+      display: grid; place-items: center;
+      background: radial-gradient(60% 50% at 80% 10%, var(--accent-tint), transparent 70%), var(--bg);
+      color: var(--text);
+      font-family: "Schibsted Grotesk", system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    main { width: 100%; max-width: 640px; padding: 40px 20px; }
+    .code { margin: 0; color: var(--accent); font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .95rem; }
+    .big {
+      margin: 6px 0 0; color: var(--accent);
+      font-size: clamp(6rem, 26vw, 11rem); font-weight: 800; line-height: .9; letter-spacing: -.05em;
+      text-shadow: 6px 6px 0 var(--accent-tint);
+    }
+    h1 { margin: 22px 0 0; color: var(--heading); font-size: clamp(1.6rem, 5vw, 2.2rem); line-height: 1.15; letter-spacing: -.02em; }
+    p.text { margin: 12px 0 0; max-width: 460px; }
+    p.en { margin: 6px 0 0; color: var(--muted); font-size: .92rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    a.button {
+      min-height: 50px; display: inline-flex; align-items: center; padding: 0 22px;
+      border: 1.5px solid var(--accent); border-radius: 10px;
+      font-family: "JetBrains Mono", ui-monospace, monospace; font-size: .9rem; text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    a.primary { background: var(--accent); color: var(--on-accent); }
+    a.primary:hover { transform: translate(-3px, -3px); box-shadow: 3px 3px 0 0 var(--ochre); }
+    a.outline { color: var(--accent); }
+    a.outline:hover { background: var(--accent-tint); transform: translate(-3px, -3px); box-shadow: 3px 3px 0 0 var(--accent); }
     a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
   </style>
 </head>
 <body>
   <main>
+    <p class="code">Error 404</p>
+    <p class="big" aria-hidden="true">404</p>
     <h1>Esta página no existe.</h1>
-    <p>Puede que el enlace esté mal escrito o que la página se haya movido.</p>
-    <a href="./">Ir al portfolio</a>
+    <p class="text">Puede que el enlace esté mal escrito o que la página se haya movido. Desde el inicio puedes ver todo el portfolio.</p>
+    <p class="en" lang="en">This page doesn't exist. Head back to the portfolio home page.</p>
+    <div class="actions">
+      <a class="button primary" href="/">Ir al portfolio</a>
+      <a class="button outline" href="/#contacto">Contactar</a>
+    </div>
   </main>
 </body>
 </html>

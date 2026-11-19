@@ -24,7 +24,7 @@ Abierto a oportunidades de desarrollo en remoto, híbrido o presencial.
 
 ## Sobre esta web
 
-Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schibsted Grotesk y JetBrains Mono (Google Fonts). Iconos de tecnologías: [Devicon](https://devicon.dev/) (MIT), guardados en `assets/icons`.
+Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schibsted Grotesk y JetBrains Mono, servidas desde la propia web (SIL OFL, en `assets/fonts`). Iconos de tecnologías: [Devicon](https://devicon.dev/) (MIT), guardados en `assets/icons`.
 
 - Español / inglés, con el idioma elegido guardado en el navegador.
 - Tema oscuro (por defecto) y claro.
@@ -32,7 +32,9 @@ Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schib
 - Experiencia en pestañas, proyecto destacado con esquema animado y tecnologías con sus logos.
 - Adaptada a móvil, tablet y escritorio.
 - Accesibilidad: enlace para saltar al contenido, navegación con teclado y animaciones reducidas si el sistema lo pide (`prefers-reduced-motion`).
-- SEO básico: metadatos Open Graph, datos estructurados JSON-LD y página 404.
+- SEO: metadatos Open Graph y Twitter con imagen para compartir (`assets/images/og-image.jpg`, 1200×630), datos estructurados JSON-LD, URL canónica y página 404 propia.
+- Iconos de app (manifest) para añadir la web a la pantalla de inicio.
+- Lighthouse: 99–100 en rendimiento y 100 en accesibilidad, buenas prácticas y SEO.
 
 ### Estructura
 
@@ -45,8 +47,9 @@ Hecha a mano con **HTML, CSS y JavaScript**, sin frameworks. Tipografías: Schib
 ├── site.webmanifest
 ├── robots.txt
 └── assets/
-    ├── images/         # Foto de perfil y captura de vista previa
-    └── icons/          # Logos de tecnologías (Devicon, MIT)
+    ├── images/         # Foto de perfil (JPG y WebP), imagen para compartir y captura
+    ├── icons/          # Logos de tecnologías (Devicon, MIT) e iconos de la app (app/)
+    └── fonts/          # Tipografías (woff2) y sus licencias
 ```
 
 ### Ejecutarla en local
