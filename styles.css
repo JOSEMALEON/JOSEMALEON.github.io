@@ -382,7 +382,52 @@ svg {
   70%, 100% { box-shadow: 0 0 0 9px transparent; }
 }
 
-.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 36px; }
+
+.text-link {
+  padding: 10px 4px;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: .9rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 5px;
+  transition: text-decoration-color .2s;
+}
+.text-link:hover { text-decoration-color: currentColor; }
+
+/* Tarjeta de código de la portada (solo pantallas anchas) */
+.hero-inner { display: grid; grid-template-columns: minmax(0, 1fr); align-items: center; gap: 56px; }
+.hero-code { display: none; }
+@media (min-width: 1180px) {
+  .hero-inner { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+  .hero-code {
+    display: block;
+    margin: 0;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--surface) 88%, transparent);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+  }
+  .hero-name { font-size: clamp(2.8rem, 5.6vw, 4.8rem); }
+  .hero-tagline { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+}
+.code-bar {
+  display: flex; align-items: center; gap: 7px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+}
+.code-bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--line); }
+.code-bar b { margin-left: 10px; color: var(--muted); font-size: .78rem; font-weight: 500; }
+.hero-code pre { margin: 0; padding: 22px 22px 26px; font-size: .86rem; line-height: 1.75; color: var(--text); white-space: pre; overflow-x: auto; }
+.hero-code .k { color: var(--accent); }
+.hero-code .t { color: var(--heading); font-weight: 600; }
+.hero-code .s { color: var(--ochre); }
+.hero-code .c { color: color-mix(in srgb, var(--accent) 60%, var(--heading)); }
+.hero-code .cm { color: var(--muted); font-style: italic; }
 
 .scroll-hint {
   position: absolute;
@@ -414,12 +459,13 @@ svg {
 @keyframes wheel { 0% { opacity: 1; transform: none; } 80% { opacity: 0; transform: translateY(12px); } 100% { opacity: 0; } }
 
 /* Entrada de la portada */
-.hero-inner > * { animation: rise .8s var(--ease) both; }
-.hero-inner > :nth-child(2) { animation-delay: .1s; }
-.hero-inner > :nth-child(3) { animation-delay: .2s; }
-.hero-inner > :nth-child(4) { animation-delay: .3s; }
-.hero-inner > :nth-child(5) { animation-delay: .4s; }
-.hero-inner > :nth-child(6) { animation-delay: .5s; }
+.hero-copy > *, .hero-code { animation: rise .8s var(--ease) both; }
+.hero-copy > :nth-child(2) { animation-delay: .1s; }
+.hero-copy > :nth-child(3) { animation-delay: .2s; }
+.hero-copy > :nth-child(4) { animation-delay: .3s; }
+.hero-copy > :nth-child(5) { animation-delay: .4s; }
+.hero-copy > :nth-child(6) { animation-delay: .5s; }
+.hero-code { animation-delay: .6s; }
 @keyframes rise { from { opacity: .01; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
 /* ---------- Sections ---------- */
